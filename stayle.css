@@ -7,8 +7,10 @@ body {
     margin: 0;
     font-family: Arial, sans-serif;
     color: #202124;
+    background-color: #ffffff;
 }
 
+/* Navigation links */
 nav {
     display: flex;
     justify-content: flex-end;
@@ -26,6 +28,7 @@ a:hover {
     text-decoration: underline;
 }
 
+/* Google home and image search */
 .home {
     width: min(90%, 600px);
     margin: 100px auto 0;
@@ -45,6 +48,7 @@ a:hover {
     color: #4285f4;
 }
 
+/* Search box */
 .search-box {
     width: 100%;
     height: 46px;
@@ -61,6 +65,7 @@ a:hover {
     border-color: transparent;
 }
 
+/* Home page buttons */
 .buttons {
     margin-top: 28px;
     display: flex;
@@ -72,6 +77,7 @@ a:hover {
 .buttons input {
     padding: 10px 16px;
     background: #f8f9fa;
+    color: #202124;
     border: 1px solid #f8f9fa;
     border-radius: 4px;
     cursor: pointer;
@@ -81,6 +87,7 @@ a:hover {
     border-color: #dadce0;
 }
 
+/* Advanced search title */
 .advanced-title {
     margin: 35px 40px;
     color: #d93025;
@@ -88,6 +95,12 @@ a:hover {
     font-weight: normal;
 }
 
+hr {
+    border: none;
+    border-top: 1px solid #ebebeb;
+}
+
+/* Advanced search form */
 .advanced-form {
     max-width: 850px;
     margin: 35px 40px;
@@ -111,31 +124,49 @@ a:hover {
     height: 34px;
     padding: 5px 9px;
     border: 1px solid #d9d9d9;
+    background-color: #ffffff;
 }
 
 .advanced-form input:focus {
     outline: 1px solid #4285f4;
 }
 
+/* Blue Advanced Search button */
 .advanced-form button {
     grid-column: 2;
     justify-self: end;
-    background: #4285f4;
-    color: white;
+    background-color: #4285f4 !important;
+    color: #ffffff !important;
     border: 1px solid #3079ed;
     border-radius: 4px;
     padding: 10px 16px;
+    font-size: 14px;
     font-weight: bold;
     cursor: pointer;
 }
 
+.advanced-form button:hover {
+    background-color: #357ae8 !important;
+    border-color: #2f5bb7;
+}
+
+/* Mobile responsive layout */
 @media (max-width: 600px) {
+    nav {
+        gap: 16px;
+        padding: 18px 16px;
+    }
+
     .home {
         margin-top: 70px;
     }
 
     .logo {
         font-size: 60px;
+    }
+
+    .advanced-title {
+        margin: 30px 20px;
     }
 
     .advanced-form {
