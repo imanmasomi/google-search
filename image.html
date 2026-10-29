@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Google Image Search</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav>
+        <a href="index.html">Google Search</a>
+        <a href="advanced.html">Advanced Search</a>
+    </nav>
+
+    <main class="home">
+        <h1 class="logo">Google</h1>
+        <p class="subtitle">Image Search</p>
+
+        <form action="https://www.google.com/search" method="GET">
+            <input type="hidden" name="udm" value="2">
+
+            <input
+                class="search-box"
+                type="text"
+                name="q"
+                aria-label="Search images"
+                required
+            >
+
+            <div class="buttons">
+                <input type="submit" value="Search Images">
+            </div>
+        </form>
+    </main>
+</body>
+</html>
